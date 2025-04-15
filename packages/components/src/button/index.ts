@@ -1,5 +1,5 @@
-import _Button from "./button.vue";
-import type { App, Plugin, Component } from "vue";
+import _Button from './button.vue';
+import type { App, Plugin, Component } from 'vue';
 type SFCWithInstall = Component & Plugin;
 
 // Wrapping each SFC with an install function makes it callable as a plugin by app.use() (Vue3)
@@ -7,8 +7,8 @@ type SFCWithInstall = Component & Plugin;
 const withInstall = (comp: Component) => {
   (comp as SFCWithInstall).install = (app: App) => {
     // Extract component name from file path or use default
-    if (typeof comp.name === "undefined") {
-      throw new Error("Component registry name not defined");
+    if (typeof comp.name === 'undefined') {
+      throw new Error('Component registry name not defined');
     }
     app.component(comp.name, comp);
   };
