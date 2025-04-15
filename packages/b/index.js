@@ -1,2 +1,2 @@
-import sayHello from "@imho-industries/a";
+import sayHello from '@imho-industries/a';
 sayHello();

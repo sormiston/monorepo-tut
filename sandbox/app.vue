@@ -1,7 +1,7 @@
 <template>
-  <Button />
+  <my-button />
 </template>
 
 <script setup lang="ts">
-import { Button } from "@imho-industries/components";
+  import { myButton } from '@imho-industries/components';
 </script>
