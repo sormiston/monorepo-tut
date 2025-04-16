@@ -1,10 +1,11 @@
 import _Button from './button.vue';
-import type { App, Plugin, Component } from 'vue';
-type SFCWithInstall = Component & Plugin;
+import type { App, Plugin } from 'vue';
+type ButtonSFC = typeof _Button;
+type SFCWithInstall = ButtonSFC & Plugin;
 
 // Wrapping each SFC with an install function makes it callable as a plugin by app.use() (Vue3)
 // the SFC's install function results in it being globally registered in Vue app
-const withInstall = (comp: Component) => {
+const withInstall = (comp: ButtonSFC) => {
   (comp as SFCWithInstall).install = (app: App) => {
     // Extract component name from file path or use default
     if (typeof comp.name === 'undefined') {
@@ -16,4 +17,5 @@ const withInstall = (comp: Component) => {
 };
 
 export const Button = withInstall(_Button);
+
 export default Button;

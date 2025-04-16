@@ -1,3 +1,3 @@
 <template>
-  <IMHO-Button type="primary"> Test Button </IMHO-Button>
+  <IMHOButton type="primary"> Test Button </IMHOButton>
 </template>

@@ -7,7 +7,7 @@
   import { computed } from 'vue';
   defineOptions({ name: 'IMHOButton' }); // Developer note: I am necessary for component registration!  Comment me out to see dev error.
   type ButtonProps = {
-    type?: string;
+    type?: 'primary';
   };
   const buttonProps = defineProps<ButtonProps>();
   const buttonStyle = computed(() => {
@@ -24,6 +24,7 @@
     background: #fff;
     border: 1px solid #dcdfe6;
     color: #606266;
+    appearance: none;
     -webkit-appearance: none;
     text-align: center;
     box-sizing: border-box;
