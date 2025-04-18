@@ -1,7 +1,19 @@
+// copilot: disable
+
 Must Do:
 ☐ Migrate to pnpm v10 and use it as opportunity to study relevant features
+☐ Component import tests:
+    ☐ individual components are importable by Default Import syntax
+    ☐ individual components are importable by Named Import syntax
+    ☐ all components are importable by Namespace Import syntax
+    ☐ component library can be registered as a plugin
+☐ do @imho-industries/utils package.json.  public or private?
 
 Should Do:
+☐ prove centralization and divulgation of scss abstracts (from high-level SCSS module files to .vue file <style> tags) 
+☐ double-check good IDE behavior between eslint and tsc
+☐ introduce tsc and vue-tsc type-checking scripts!
+☐ workspace specific tsconfigs?  for package specific aliasing...current sharing of root tsconfig not so scalable
 
 Could Do:
 
