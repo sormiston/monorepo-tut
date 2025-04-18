@@ -8,6 +8,7 @@ import * as components from './index';
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     IMHOButton: typeof components.Button;
+    IMHOIcon: typeof components.Icon;
   }
 }
 export {};
