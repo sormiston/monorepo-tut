@@ -20,17 +20,21 @@
   "packageManager": "pnpm@9.15.0+sha1.8bfdb6d72b4d5fdf87d21d27f2bfbe2b21dd2629",
   "devDependencies": {
     "@eslint/js": "^9.24.0",
+    "@types/node": "^22.14.1",
+    "@vitejs/plugin-vue": "^5.2.3",
     "@vue/runtime-core": "^3.5.13",
     "eslint": "^9.24.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
     "eslint-plugin-vue": "^10.0.0",
+    "glob": "^11.0.1",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "sass": "^1.86.3",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.30.1",
-    "unplugin-vue-define-options": "3.0.0-beta.8",
+    "vite": "^6.2.6",
+    "vite-plugin-dts": "^4.5.3",
     "vue": "^3.5.13",
     "vue-tsc": "^2.2.8"
   }

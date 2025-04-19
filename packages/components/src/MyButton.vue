@@ -1,22 +1,23 @@
 <template>
-  <button class="imho-button" :class="buttonStyle">
+  <button class="my-button" :class="buttonStyle">
     <slot />
   </button>
 </template>
+
 <script lang="ts" setup>
   import { computed } from 'vue';
-  defineOptions({ name: 'IMHOButton' }); // Developer note: I am necessary for component registration!  Comment me out to see dev error.
+
   type ButtonProps = {
     type?: 'primary';
   };
   const buttonProps = defineProps<ButtonProps>();
   const buttonStyle = computed(() => {
-    return { [`imho-button--${buttonProps.type}`]: buttonProps.type };
+    return { [`my-button--${buttonProps.type}`]: buttonProps.type };
   });
 </script>
 
 <style lang="scss" scoped>
-  .imho-button {
+  .my-button {
     display: inline-block;
     line-height: 1;
     white-space: nowrap;
@@ -37,7 +38,7 @@
     border-radius: 4px;
   }
 
-  .imho-button.imho-button--primary {
+  .my-button.my-button--primary {
     color: #fff;
     background-color: #409eff;
     border-color: #409eff;
